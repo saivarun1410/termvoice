@@ -40,9 +40,12 @@ brew install portaudio
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -e .
+python -m pip install termvoice
 termvoice doctor
 ```
+
+To install the latest development version from a clone, replace the package
+installation command with `python -m pip install -e .`.
 
 Linux users may need their distribution's PortAudio package before installing.
 Windows users can normally install the Python dependencies directly.
@@ -123,6 +126,13 @@ python -m compileall -q src tests
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/architecture.md](docs/architecture.md).
+
+## Releasing
+
+Releases use PyPI Trusted Publishing and do not store a long-lived PyPI token in
+GitHub. Publishing a GitHub release builds the source and wheel distributions,
+then uploads them from the `publish.yml` workflow through the protected `pypi`
+environment.
 
 ## Roadmap
 
