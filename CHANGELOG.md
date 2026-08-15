@@ -17,3 +17,6 @@ Versioning.
 - Codex, clipboard, and stdout targets.
 - Dependency doctor and environment-based defaults.
 - Temporary-audio cleanup and `--keep-audio` override.
+
+[Unreleased]: https://github.com/saivarun1410/termvoice/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/saivarun1410/termvoice/releases/tag/v0.1.0

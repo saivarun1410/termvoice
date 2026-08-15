@@ -1,5 +1,10 @@
 # TermVoice
 
+[![PyPI version](https://img.shields.io/pypi/v/termvoice.svg)](https://pypi.org/project/termvoice/)
+[![Python versions](https://img.shields.io/pypi/pyversions/termvoice.svg)](https://pypi.org/project/termvoice/)
+[![CI](https://github.com/saivarun1410/termvoice/actions/workflows/ci.yml/badge.svg)](https://github.com/saivarun1410/termvoice/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 TermVoice turns speech into reviewed prompts for terminal AI agents. Recording
 and transcription happen locally; the prompt only leaves your computer when you
 approve it and dispatch it to an agent.
@@ -33,7 +38,8 @@ privacy and data policies. TermVoice does not send the audio recording.
 
 ## Install
 
-TermVoice requires Python 3.9 or newer. On macOS, PortAudio is recommended:
+TermVoice is [available on PyPI](https://pypi.org/project/termvoice/) and requires
+Python 3.9 or newer. On macOS, PortAudio is recommended:
 
 ```bash
 brew install portaudio
@@ -132,7 +138,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/architecture.md](docs/architect
 Releases use PyPI Trusted Publishing and do not store a long-lived PyPI token in
 GitHub. Publishing a GitHub release builds the source and wheel distributions,
 then uploads them from the `publish.yml` workflow through the protected `pypi`
-environment.
+environment. Published versions are available from the
+[TermVoice PyPI project](https://pypi.org/project/termvoice/) and the
+[GitHub releases page](https://github.com/saivarun1410/termvoice/releases).
 
 ## Roadmap
 
